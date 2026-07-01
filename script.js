@@ -2,7 +2,7 @@ document.querySelector("button").addEventListener("click", geraCodigo);
 
 let endereco = "https://api.groq.com/openai/v1/chat/completions";
 
-const API_KEY = "COLOQUE_SUA_CHAVE_AQUI";
+const API_KEY = ""; // Insira sua chave de API aqui
 
 async function geraCodigo() {
     let textarea = document.querySelector(".texto-pagina").value;
