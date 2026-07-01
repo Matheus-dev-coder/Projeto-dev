@@ -8,7 +8,7 @@ async function geraCodigo(){
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            
+                  "Authorization": "Bearer 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"
 
         },
         body: JSON.stringify({
