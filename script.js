@@ -2,14 +2,14 @@ document.querySelector("button").addEventListener("click", geraCodigo);
 
 let endereco = "https://api.groq.com/openai/v1/chat/completions"
 
+const API_KEY = "COLOQUE_SUA_CHAVE_AQUI";
 async function geraCodigo(){
     let textarea = document.querySelector(".texto-pagina").value
     let resosta = await fetch(endereco, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-                  "Authorization": "Bearer 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"
-
+            "Authorization": `Bearer ${API_KEY}`
         },
         body: JSON.stringify({
             "model": "llama-3.3-70b-versatile",
